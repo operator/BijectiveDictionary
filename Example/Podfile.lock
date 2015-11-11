@@ -1,0 +1,14 @@
+PODS:
+  - BijectiveDictionary (1.0)
+
+DEPENDENCIES:
+  - BijectiveDictionary (from `../`)
+
+EXTERNAL SOURCES:
+  BijectiveDictionary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BijectiveDictionary: 4b03b63dffbfd58529789f9147b0e501917f1bfd
+
+COCOAPODS: 0.39.0

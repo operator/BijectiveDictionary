@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+
+use_frameworks!
+
+target 'BijectiveDictionary_Tests', :exclusive => true do
+  pod "BijectiveDictionary", :path => "../"  
+end

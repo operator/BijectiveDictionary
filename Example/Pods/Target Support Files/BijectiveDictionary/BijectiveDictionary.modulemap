@@ -1,0 +1,6 @@
+framework module BijectiveDictionary {
+  umbrella header "BijectiveDictionary-umbrella.h"
+
+  export *
+  module * { export * }
+}
