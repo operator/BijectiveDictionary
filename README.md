@@ -27,10 +27,10 @@ OPCMutableBijectiveDictionary *dict = [OPCMutableBijectiveDictionary dictionary]
 dict[@"key"] = @"value";
 
 // Retrieve the value for @"key".
-NSString *value = dict[@"value"];
+NSString *value = dict[@"key"];
 
 // Retrieve the key for @"value".
-NSString *key = dict.inverse[@"key"];
+NSString *key = dict.inverse[@"value"];
 ```
 
 ## Requirements
