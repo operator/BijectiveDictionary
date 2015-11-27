@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  The number of entries in the dictionary.
  */
-@property (nonatomic, readonly) NSUInteger count;
+@property (readonly) NSUInteger count;
 
 /**
  *  A bijective dictionary where the keys and objects are reversed from the receiver.
