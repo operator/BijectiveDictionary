@@ -85,18 +85,9 @@ NS_ASSUME_NONNULL_BEGIN
     return description;
 }
 
-- (BOOL)isEqual:(id)object
+- (BOOL)isEqual:(OPCBijectiveDictionary *)otherDictionary
 {
-    if (!object) {
-        return NO;
-    } else if (object == self) {
-        return YES;
-    } else if (![object isKindOfClass:[OPCBijectiveDictionary class]]) {
-        return NO;
-    } else {
-        OPCBijectiveDictionary *dictionary = object;
-        return [self.orderedKeys isEqualToOrderedSet:dictionary.orderedKeys] && [self.orderedObjects isEqualToOrderedSet:dictionary.orderedObjects];
-    }
+    return [otherDictionary isKindOfClass:[OPCBijectiveDictionary class]] && [self.orderedKeys isEqualToOrderedSet:otherDictionary.orderedKeys] && [self.orderedObjects isEqualToOrderedSet:otherDictionary.orderedObjects];
 }
 
 - (NSUInteger)hash
