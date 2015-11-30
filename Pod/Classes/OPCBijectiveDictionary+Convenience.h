@@ -1,5 +1,5 @@
 //
-//  OPCBijectiveDictionary+OPConvenienceExtensions.h
+//  OPCBijectiveDictionary+Convenience.h
 //  Pods
 //
 //  Created by Peter Meyers on 8/27/15.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OPCBijectiveDictionary (Convenience)
+@interface OPCBijectiveDictionary<__covariant KeyType, __covariant ObjectType> (Convenience)
 
 /**
  *  Creates and returns an empty bijective dictionary.
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new bijective dictionary containing the keys and values found in bijective dictionary.
  */
-+ (instancetype)dictionaryWithDictionary:(NSDictionary *)dictionary;
++ (instancetype)dictionaryWithDictionary:(NSDictionary<KeyType, ObjectType> *)dictionary;
 
 /**
  *  Creates and returns a bijective dictionary containing the keys and values from a map table.
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new bijective dictionary containing the keys and values found in mapTable.
  */
-+ (instancetype)dictionaryWithMapTable:(NSMapTable *)mapTable;
++ (instancetype)dictionaryWithMapTable:(NSMapTable<KeyType, ObjectType> *)mapTable;
 
 /**
  *  Creates and returns a bijective dictionary containing entries constructed from the contents of an ordered set of keys and values.
@@ -45,8 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new bijective dictionary containing entries constructed from the contents of objects and keys.
  */
-+ (instancetype)dictionaryWithObjects:(NSOrderedSet *)objects
-                                 keys:(NSOrderedSet *)keys;
++ (instancetype)dictionaryWithObjects:(NSOrderedSet<ObjectType> *)objects
+                                 keys:(NSOrderedSet<KeyType> *)keys;
 
 /**
  *  Initializes a newly allocated bijective dictionary by placing in it the keys and values contained in an NSDictionary.
@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return An initialized bijective dictionary containing the keys and values found in dictionary.
  */
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary<KeyType, ObjectType> *)dictionary;
 
 /**
  *  Initializes a newly allocated bijective dictionary by placing in it the keys and values contained in an NSMapTable.
@@ -64,7 +64,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return An initialized bijective dictionary containing the keys and values found in mapTable.
  */
-- (instancetype)initWithMapTable:(NSMapTable *)mapTable;
+- (instancetype)initWithMapTable:(NSMapTable<KeyType, ObjectType> *)mapTable;
 
 /**
  *  Creates and returns a new bijective dictionary containing the keys and values from the receiver unioned with keys and values from another bijective dictionary, respectively. If both dictionaries contain the same key or value, the receiving dictionary’s key or value is replaced.
@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new bijective dictionary containing keys and values constructed from the receiving bijective dictionary unioned with keys and values from another bijective dictionary, respectively.
  */
-- (instancetype)bijectiveDictionaryByAddingEntriesFromDictionary:(OPCBijectiveDictionary *)dictionary;
+- (instancetype)bijectiveDictionaryByAddingEntriesFromDictionary:(OPCBijectiveDictionary<KeyType, ObjectType> *)dictionary;
 
 /**
  *  Returns a Boolean value that indicates whether the contents of the receiving bijective dictionary are equal to the contents of another given bijective dictionary. Two dictionaries have equal contents if they each hold the same number of entries and, for a given key, the corresponding value objects in each dictionary satisfy the isEqual: test.
@@ -82,7 +82,14 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return YES if the contents of dictionary are equal to the contents of the receiving bijective dictionary, otherwise NO.
  */
-- (BOOL)isEqualToBijectiveDictionary:(OPCBijectiveDictionary *)dictionary;
+- (BOOL)isEqualToBijectiveDictionary:(OPCBijectiveDictionary<KeyType, ObjectType> *)dictionary;
+
+/**
+ *  Applies a given block object to the entries of the bijective dictionary.
+ *
+ *  @param block A block object to operate on entries in the dictionary.
+ */
+- (void)enumerateKeysAndObjectsUsingBlock:(void (^)(KeyType key, ObjectType obj))block;
 
 @end
 

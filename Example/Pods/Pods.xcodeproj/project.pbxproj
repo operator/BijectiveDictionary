@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08593556140A66E041341DDE2CD25435 /* OPCBijectiveDictionary+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CC0182AA8E9F2CD92B15913EFAB2862 /* OPCBijectiveDictionary+Convenience.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		08593556140A66E041341DDE2CD25435 /* OPCBijectiveDictionary+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 721ECB7B70A3FA2553F19558CF5B768B /* OPCBijectiveDictionary+Convenience.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		184724A6015B3354878D6199A82DA3EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		21D037656B85BFDAB53EF24EC30A3E89 /* BijectiveDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B32438A38C1B091D39BEB1764C8335 /* BijectiveDictionary-dummy.m */; };
-		22057BAED2296391DEEB0C6EF5B7581D /* OPCBijectiveDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = F696EA0ACAD2FAC6A140AD92BE8065BB /* OPCBijectiveDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3BBEEF90286DFF4862FF047EF014147D /* OPCBijectiveDictionary+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = F706D84295FDEE381DD7F3A2C41E393D /* OPCBijectiveDictionary+Convenience.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21D037656B85BFDAB53EF24EC30A3E89 /* BijectiveDictionary-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB4AE0ED42D7AB06E081F259AAC14CC /* BijectiveDictionary-dummy.m */; };
+		22057BAED2296391DEEB0C6EF5B7581D /* OPCBijectiveDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 610575C5CA71FD937EBE06EAA3C0422E /* OPCBijectiveDictionary.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3BBEEF90286DFF4862FF047EF014147D /* OPCBijectiveDictionary+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EDA13A8088513130618567FE50EB1A /* OPCBijectiveDictionary+Convenience.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54A23CAC62CFA0E5EFE8DD59702A75FD /* Pods-BijectiveDictionary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4174EB8D9972BC200DD7498EC07A6614 /* Pods-BijectiveDictionary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B6D7DBEA809DEBE4E9CAB269C52FE7C /* OPCBijectiveDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = C4A78BA2796AE6F218D6A7EBAE19E905 /* OPCBijectiveDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B6D7DBEA809DEBE4E9CAB269C52FE7C /* OPCBijectiveDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E43893D32BF2EC3458A4BC4CED7BED0 /* OPCBijectiveDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9AEE02F607213948630F8E6F93326C55 /* Pods-BijectiveDictionary_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FC49F81BF8349D7275EB4E88B4707 /* Pods-BijectiveDictionary_Tests-dummy.m */; };
-		B831605B627BF5353394BEF5286C16BF /* BijectiveDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 350ACB8675E692E5DCDA6D7310A25751 /* BijectiveDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE2370D552B4846E64028532104BADC6 /* OPCCopying.h in Headers */ = {isa = PBXBuildFile; fileRef = 342876F82C4570035E7BBA86E6E61EC6 /* OPCCopying.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B831605B627BF5353394BEF5286C16BF /* BijectiveDictionary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E776B8EEAFA6E99E64E0C6275BFDA068 /* BijectiveDictionary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2370D552B4846E64028532104BADC6 /* OPCCopying.h in Headers */ = {isa = PBXBuildFile; fileRef = D7CC9609D66A4904412DF66D25C809A4 /* OPCCopying.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D87A051ED3550B134223E5D62071750C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,31 +31,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00B84751E2357C50618D7116BB663D25 /* BijectiveDictionary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BijectiveDictionary.modulemap; sourceTree = "<group>"; };
-		15081F9A496B88215939FD96170F6CFB /* BijectiveDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BijectiveDictionary-prefix.pch"; sourceTree = "<group>"; };
-		342876F82C4570035E7BBA86E6E61EC6 /* OPCCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPCCopying.h; sourceTree = "<group>"; };
-		350ACB8675E692E5DCDA6D7310A25751 /* BijectiveDictionary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BijectiveDictionary-umbrella.h"; sourceTree = "<group>"; };
-		3CC0182AA8E9F2CD92B15913EFAB2862 /* OPCBijectiveDictionary+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OPCBijectiveDictionary+Convenience.m"; sourceTree = "<group>"; };
+		0CB4AE0ED42D7AB06E081F259AAC14CC /* BijectiveDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BijectiveDictionary-dummy.m"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4174EB8D9972BC200DD7498EC07A6614 /* Pods-BijectiveDictionary_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BijectiveDictionary_Tests-umbrella.h"; sourceTree = "<group>"; };
-		43B32438A38C1B091D39BEB1764C8335 /* BijectiveDictionary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BijectiveDictionary-dummy.m"; sourceTree = "<group>"; };
 		4C7FC49F81BF8349D7275EB4E88B4707 /* Pods-BijectiveDictionary_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BijectiveDictionary_Tests-dummy.m"; sourceTree = "<group>"; };
-		5929DE43B59DBB536CAEB7A382B0EDBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5958279F723504B0ED8C301A21B3F994 /* Pods-BijectiveDictionary_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BijectiveDictionary_Tests.modulemap"; sourceTree = "<group>"; };
+		610575C5CA71FD937EBE06EAA3C0422E /* OPCBijectiveDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPCBijectiveDictionary.m; sourceTree = "<group>"; };
+		62045F6B40E8DDF933BDA3EE5A45D852 /* BijectiveDictionary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BijectiveDictionary.modulemap; sourceTree = "<group>"; };
+		65E2217F15ABD1D2DC9347E61A28C2E1 /* BijectiveDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BijectiveDictionary.xcconfig; sourceTree = "<group>"; };
 		67EC412116CBF898EEC5A2C35B70120D /* Pods-BijectiveDictionary_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BijectiveDictionary_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		721ECB7B70A3FA2553F19558CF5B768B /* OPCBijectiveDictionary+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OPCBijectiveDictionary+Convenience.m"; sourceTree = "<group>"; };
+		88EDA13A8088513130618567FE50EB1A /* OPCBijectiveDictionary+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OPCBijectiveDictionary+Convenience.h"; sourceTree = "<group>"; };
 		8A1EDCB9E84B869A0CD1A8C4ACA01D8D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E43893D32BF2EC3458A4BC4CED7BED0 /* OPCBijectiveDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPCBijectiveDictionary.h; sourceTree = "<group>"; };
+		A25377B88050472CAABEA503C773E637 /* BijectiveDictionary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BijectiveDictionary-prefix.pch"; sourceTree = "<group>"; };
 		A3F28EBD16EEDE348F35C75CB3551EB6 /* Pods-BijectiveDictionary_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BijectiveDictionary_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A4A4A6C4E4D656E95480D322A3DC30C8 /* BijectiveDictionary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BijectiveDictionary.xcconfig; sourceTree = "<group>"; };
 		B2AAB35471068BEE266487188880C9B4 /* Pods-BijectiveDictionary_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BijectiveDictionary_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B8D6957293B008BA35579B339F294B35 /* Pods-BijectiveDictionary_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BijectiveDictionary_Tests-resources.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C08D847C4C25F3BCC5888641C16D088F /* Pods-BijectiveDictionary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BijectiveDictionary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C4A78BA2796AE6F218D6A7EBAE19E905 /* OPCBijectiveDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPCBijectiveDictionary.h; sourceTree = "<group>"; };
 		CB5E7E51DD0A8F69E3DA5BBBFA035ABD /* BijectiveDictionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BijectiveDictionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7CC9609D66A4904412DF66D25C809A4 /* OPCCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OPCCopying.h; sourceTree = "<group>"; };
+		DDC17F907692A1555EEF678B5648503B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFD8AA4C14E024AC594157A6171AB7C8 /* Pods-BijectiveDictionary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BijectiveDictionary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E776B8EEAFA6E99E64E0C6275BFDA068 /* BijectiveDictionary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BijectiveDictionary-umbrella.h"; sourceTree = "<group>"; };
 		EAC41454CB3465B8405894DEE9886B99 /* Pods_BijectiveDictionary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijectiveDictionary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F696EA0ACAD2FAC6A140AD92BE8065BB /* OPCBijectiveDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = OPCBijectiveDictionary.m; sourceTree = "<group>"; };
-		F706D84295FDEE381DD7F3A2C41E393D /* OPCBijectiveDictionary+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OPCBijectiveDictionary+Convenience.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,59 +78,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06C3082FDAD851CAB32B62D8F6DBBA1D /* Classes */ = {
+		01933A2264DBFCDDDFE4F600E7D2BF1C /* OPCCopying */ = {
 			isa = PBXGroup;
 			children = (
-				C4A78BA2796AE6F218D6A7EBAE19E905 /* OPCBijectiveDictionary.h */,
-				F696EA0ACAD2FAC6A140AD92BE8065BB /* OPCBijectiveDictionary.m */,
-				F706D84295FDEE381DD7F3A2C41E393D /* OPCBijectiveDictionary+Convenience.h */,
-				3CC0182AA8E9F2CD92B15913EFAB2862 /* OPCBijectiveDictionary+Convenience.m */,
-				342876F82C4570035E7BBA86E6E61EC6 /* OPCCopying.h */,
+				D7CC9609D66A4904412DF66D25C809A4 /* OPCCopying.h */,
+			);
+			path = OPCCopying;
+			sourceTree = "<group>";
+		};
+		0EA53D67840255F20015CD70ACBE2620 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				925E29033E39F1E39E7D15E97D33A4B0 /* BijectiveDictionary */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		301723A48F26DC764CA4EEFDD0DD8463 /* OPCCopying */ = {
+			isa = PBXGroup;
+			children = (
+				713EE675B7417CC4193867842FCAD202 /* Pod */,
+			);
+			name = OPCCopying;
+			sourceTree = "<group>";
+		};
+		633C5F9911CDA68C946D673AF9E62514 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				01933A2264DBFCDDDFE4F600E7D2BF1C /* OPCCopying */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		2CDA5D2904DD6A3AC908228A18FE1EB4 /* BijectiveDictionary */ = {
+		713EE675B7417CC4193867842FCAD202 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F58852A11EAD47EF5B85D555F69F6ACF /* Pod */,
-				82BB48C49A9F8D5E55CBDAA4A56E6503 /* Support Files */,
+				633C5F9911CDA68C946D673AF9E62514 /* Classes */,
 			);
-			name = BijectiveDictionary;
-			path = ../..;
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				A2CFF2408C32F627729CD27105769EC0 /* Development Pods */,
+				0EA53D67840255F20015CD70ACBE2620 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				BEE330DA988DC290564F7BCA541F37E6 /* Products */,
 				EA3852AEDB02328120A8B7E04D6269D5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82BB48C49A9F8D5E55CBDAA4A56E6503 /* Support Files */ = {
+		925E29033E39F1E39E7D15E97D33A4B0 /* BijectiveDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				00B84751E2357C50618D7116BB663D25 /* BijectiveDictionary.modulemap */,
-				A4A4A6C4E4D656E95480D322A3DC30C8 /* BijectiveDictionary.xcconfig */,
-				43B32438A38C1B091D39BEB1764C8335 /* BijectiveDictionary-dummy.m */,
-				15081F9A496B88215939FD96170F6CFB /* BijectiveDictionary-prefix.pch */,
-				350ACB8675E692E5DCDA6D7310A25751 /* BijectiveDictionary-umbrella.h */,
-				5929DE43B59DBB536CAEB7A382B0EDBE /* Info.plist */,
+				301723A48F26DC764CA4EEFDD0DD8463 /* OPCCopying */,
+				D828BDDC56F5FA18A3FCF824C8C910DD /* Pod */,
+				DE396DB1EBB884128AF0407524C761FF /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BijectiveDictionary";
-			sourceTree = "<group>";
-		};
-		A2CFF2408C32F627729CD27105769EC0 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2CDA5D2904DD6A3AC908228A18FE1EB4 /* BijectiveDictionary */,
-			);
-			name = "Development Pods";
+			name = BijectiveDictionary;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		BBCD35E1F2E0397FEAF1E6686F9D0B4C /* Pods-BijectiveDictionary_Tests */ = {
@@ -176,20 +183,45 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C0F5F9D5C0C931C4D94BC25752518FF5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9E43893D32BF2EC3458A4BC4CED7BED0 /* OPCBijectiveDictionary.h */,
+				610575C5CA71FD937EBE06EAA3C0422E /* OPCBijectiveDictionary.m */,
+				88EDA13A8088513130618567FE50EB1A /* OPCBijectiveDictionary+Convenience.h */,
+				721ECB7B70A3FA2553F19558CF5B768B /* OPCBijectiveDictionary+Convenience.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D828BDDC56F5FA18A3FCF824C8C910DD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C0F5F9D5C0C931C4D94BC25752518FF5 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DE396DB1EBB884128AF0407524C761FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62045F6B40E8DDF933BDA3EE5A45D852 /* BijectiveDictionary.modulemap */,
+				65E2217F15ABD1D2DC9347E61A28C2E1 /* BijectiveDictionary.xcconfig */,
+				0CB4AE0ED42D7AB06E081F259AAC14CC /* BijectiveDictionary-dummy.m */,
+				A25377B88050472CAABEA503C773E637 /* BijectiveDictionary-prefix.pch */,
+				E776B8EEAFA6E99E64E0C6275BFDA068 /* BijectiveDictionary-umbrella.h */,
+				DDC17F907692A1555EEF678B5648503B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BijectiveDictionary";
+			sourceTree = "<group>";
+		};
 		EA3852AEDB02328120A8B7E04D6269D5 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				BBCD35E1F2E0397FEAF1E6686F9D0B4C /* Pods-BijectiveDictionary_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F58852A11EAD47EF5B85D555F69F6ACF /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				06C3082FDAD851CAB32B62D8F6DBBA1D /* Classes */,
-			);
-			path = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +344,7 @@
 /* Begin XCBuildConfiguration section */
 		08A355ADE35AC29182DC360A7E80C7AB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4A4A6C4E4D656E95480D322A3DC30C8 /* BijectiveDictionary.xcconfig */;
+			baseConfigurationReference = 65E2217F15ABD1D2DC9347E61A28C2E1 /* BijectiveDictionary.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -339,7 +371,7 @@
 		};
 		7486541FB9870A8F8FD5C9C56FBE4B77 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4A4A6C4E4D656E95480D322A3DC30C8 /* BijectiveDictionary.xcconfig */;
+			baseConfigurationReference = 65E2217F15ABD1D2DC9347E61A28C2E1 /* BijectiveDictionary.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

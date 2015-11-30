@@ -1,5 +1,5 @@
 //
-//  OPCBijectiveDictionary+OPConvenienceExtensions.m
+//  OPCBijectiveDictionary+Convenience.m
 //  Pods
 //
 //  Created by Peter Meyers on 8/27/15.
@@ -51,6 +51,14 @@
 - (BOOL)isEqualToBijectiveDictionary:(OPCBijectiveDictionary *)dictionary
 {
     return [self isEqual:dictionary];
+}
+
+- (void)enumerateKeysAndObjectsUsingBlock:(void (^)(id _Nonnull key, id _Nonnull object))block
+{
+    for (id key in self) {
+        id object = self[key];
+        block(key, object);
+    }
 }
 
 @end
