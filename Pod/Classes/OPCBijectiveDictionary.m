@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
     return mapTable;
 }
 
-- (id)objectForKeyedSubscript:(id)key
+- (nullable id)objectForKeyedSubscript:(id)key
 {
     NSUInteger index = [self.orderedKeys indexOfObject:key];
     if (index != NSNotFound) {
@@ -370,7 +370,7 @@ forKeyedSubscript:(id)key
     return mapTable;
 }
 
-- (id)objectForKeyedSubscript:(id)key
+- (nullable id)objectForKeyedSubscript:(id)key
 {
     __block id object;
     dispatch_sync(_queue, ^{

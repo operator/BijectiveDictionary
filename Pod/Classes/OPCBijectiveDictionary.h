@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return The object associated with key, or nil if no object is associated with key.
  */
-- (ObjectType)objectForKeyedSubscript:(KeyType)key;
+- (nullable ObjectType)objectForKeyedSubscript:(KeyType)key;
 
 @end
 

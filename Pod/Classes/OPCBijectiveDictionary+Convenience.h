@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new bijective dictionary containing the keys and values found in bijective dictionary.
  */
-+ (instancetype)dictionaryWithDictionary:(NSDictionary<KeyType, ObjectType> *)dictionary;
++ (instancetype)dictionaryWithDictionary:(nullable NSDictionary<KeyType, ObjectType> *)dictionary;
 
 /**
  *  Creates and returns a bijective dictionary containing the keys and values from a map table.
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new bijective dictionary containing the keys and values found in mapTable.
  */
-+ (instancetype)dictionaryWithMapTable:(NSMapTable<KeyType, ObjectType> *)mapTable;
++ (instancetype)dictionaryWithMapTable:(nullable NSMapTable<KeyType, ObjectType> *)mapTable;
 
 /**
  *  Creates and returns a bijective dictionary containing entries constructed from the contents of an ordered set of keys and values.
@@ -45,8 +45,8 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A new bijective dictionary containing entries constructed from the contents of objects and keys.
  */
-+ (instancetype)dictionaryWithObjects:(NSOrderedSet<ObjectType> *)objects
-                                 keys:(NSOrderedSet<KeyType> *)keys;
++ (instancetype)dictionaryWithObjects:(nullable NSOrderedSet<ObjectType> *)objects
+                                 keys:(nullable NSOrderedSet<KeyType> *)keys;
 
 /**
  *  Initializes a newly allocated bijective dictionary by placing in it the keys and values contained in an NSDictionary.
@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return An initialized bijective dictionary containing the keys and values found in dictionary.
  */
-- (instancetype)initWithDictionary:(NSDictionary<KeyType, ObjectType> *)dictionary;
+- (instancetype)initWithDictionary:(nullable NSDictionary<KeyType, ObjectType> *)dictionary;
 
 /**
  *  Initializes a newly allocated bijective dictionary by placing in it the keys and values contained in an NSMapTable.
@@ -64,7 +64,30 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return An initialized bijective dictionary containing the keys and values found in mapTable.
  */
-- (instancetype)initWithMapTable:(NSMapTable<KeyType, ObjectType> *)mapTable;
+- (instancetype)initWithMapTable:(nullable NSMapTable<KeyType, ObjectType> *)mapTable;
+
+
+/**
+ *  Initializes a newly allocated bijective dictionary with a given set of keys and objects produced by running the keys
+ *  through the mapping block;
+ *
+ *  @param keys    An ordered set containing the keys for the new bijective dictionary. Keys are strongly retained by the bijective dictionary.
+ *  @param mapping A block that takes a key as a parameter and returns the bijectively mapped object. The object is strongly retained by the bijective dictionary.
+ *
+ *  @return An initialized bijective dictionary.
+ */
+- (instancetype)initWithKeys:(nullable NSSet<KeyType> *)keys objectMapping:(ObjectType(^__nullable)(KeyType key))mapping;
+
+/**
+ *  Initializes a newly allocated bijective dictionary with a given set of keys and objects produced by running the keys
+ *  through the mapping block;
+ *
+ *  @param keys    An ordered set containing the keys for the new bijective dictionary. Keys are strongly retained by the bijective dictionary.
+ *  @param mapping A block that takes a key as a parameter and returns the bijectively mapped object. The object is strongly retained by the bijective dictionary.
+ *
+ *  @return An initialized bijective dictionary.
+ */
++ (instancetype)dictionaryWithKeys:(nullable NSSet<KeyType> *)keys objectMapping:(ObjectType(^__nullable)(KeyType key))mapping;
 
 /**
  *  Creates and returns a new bijective dictionary containing the keys and values from the receiver unioned with keys and values from another bijective dictionary, respectively. If both dictionaries contain the same key or value, the receiving dictionary’s key or value is replaced.

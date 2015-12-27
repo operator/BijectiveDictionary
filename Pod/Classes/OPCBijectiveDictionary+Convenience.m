@@ -8,6 +8,8 @@
 
 #import "OPCBijectiveDictionary+Convenience.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @implementation OPCBijectiveDictionary (Convenience)
 
 + (instancetype)dictionary
@@ -15,30 +17,53 @@
     return [[self alloc] init];
 }
 
-+ (instancetype)dictionaryWithDictionary:(NSDictionary *)dictionary
++ (instancetype)dictionaryWithDictionary:(nullable NSDictionary *)dictionary
 {
     return [[self alloc] initWithDictionary:dictionary];
 }
 
-+ (instancetype)dictionaryWithObjects:(NSOrderedSet *)objects
-                                 keys:(NSOrderedSet *)keys
++ (instancetype)dictionaryWithKeys:(nullable NSSet *)keys objectMapping:(id (^__nullable)(id))mapping
+{
+    return [[self alloc] initWithKeys:keys objectMapping:mapping];
+}
+
++ (instancetype)dictionaryWithObjects:(nullable NSOrderedSet *)objects
+                                 keys:(nullable NSOrderedSet *)keys
 {
     return [[self alloc] initWithObjects:objects keys:keys];
 }
 
-+ (instancetype)dictionaryWithMapTable:(NSMapTable *)mapTable
++ (instancetype)dictionaryWithMapTable:(nullable NSMapTable *)mapTable
 {
     return [[self alloc] initWithMapTable:mapTable];
 }
 
-- (instancetype)initWithMapTable:(NSMapTable *)mapTable
+- (instancetype)initWithMapTable:(nullable NSMapTable *)mapTable
 {
-    return [self initWithObjects:[NSOrderedSet orderedSetWithArray:mapTable.objectEnumerator.allObjects] keys:[NSOrderedSet orderedSetWithArray:mapTable.keyEnumerator.allObjects]];
+    NSArray *objects = mapTable.objectEnumerator.allObjects;
+    NSArray *keys = mapTable.keyEnumerator.allObjects;
+    return [self initWithObjects:objects ? [NSOrderedSet orderedSetWithArray:objects] : nil keys: keys ? [NSOrderedSet orderedSetWithArray:keys] : nil];
 }
 
-- (instancetype)initWithDictionary:(NSDictionary *)dictionary
+- (instancetype)initWithDictionary:(nullable NSDictionary *)dictionary
 {
-    return [self initWithObjects:[NSOrderedSet orderedSetWithArray:dictionary.allValues] keys:[NSOrderedSet orderedSetWithArray:dictionary.allKeys]];
+    NSArray *objects = dictionary.allValues;
+    NSArray *keys = dictionary.allKeys;
+    return [self initWithObjects:objects ? [NSOrderedSet orderedSetWithArray:objects] : nil keys: keys ? [NSOrderedSet orderedSetWithArray:keys] : nil];
+}
+
+- (instancetype)initWithKeys:(nullable NSSet *)keys objectMapping:(id (^ __nullable )(id key))mapping
+{
+    NSOrderedSet *orderedKeys;
+    NSMutableOrderedSet *objects;
+    if (keys && mapping) {
+        orderedKeys = [NSOrderedSet orderedSetWithSet:keys];
+        objects = [NSMutableOrderedSet orderedSetWithCapacity:keys.count];
+        for (id key in orderedKeys) {
+            [objects addObject:mapping(key)];
+        }
+    }
+    return [self initWithObjects:objects keys:orderedKeys];
 }
 
 - (instancetype)bijectiveDictionaryByAddingEntriesFromDictionary:(OPCBijectiveDictionary *)dictionary
@@ -120,3 +145,5 @@
 }
 
 @end
+
+NS_ASSUME_NONNULL_END
