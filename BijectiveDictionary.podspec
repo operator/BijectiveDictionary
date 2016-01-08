@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.authors             = { 'Peter Meyers' => 'meyers@operator.com', 'Zach Langley' => 'zach@operator.com' }
   s.source              = { git: 'https://github.com/Operator/BijectiveDictionary.git', tag: s.version.to_s }
   s.platform            = :ios, '5.0'
+  s.watchos.deployment_target = '2.0'
   s.requires_arc        = true
   s.source_files        = 'Pod/Classes/*.{h,m}'
   s.public_header_files = 'Pod/Classes/*.h'
