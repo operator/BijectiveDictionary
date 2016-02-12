@@ -79,7 +79,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param object The object for key. A strong reference to the object is maintained by the dictionary.
  *  @param key    The key for object. A strong reference to the key is maintained by the dictionary.
  */
-- (void)setObject:(id)object
+- (void)setObject:(nullable id)object
 forKeyedSubscript:(id)key;
 
 /**
@@ -99,7 +99,7 @@ forKeyedSubscript:(id)key;
  *  @param object The object for key. A strong reference to the object is maintained by the dictionary.
  *  @param key    The key for object. A strong reference to the key is maintained by the dictionary.
  */
-- (void)setObject:(ObjectType)object
+- (void)setObject:(nullable ObjectType)object
 forKeyedSubscript:(KeyType)key;
 
 /**
@@ -141,7 +141,7 @@ forKeyedSubscript:(KeyType)key;
  *  @param key    The key for object. A strong reference to the key is maintained by the dictionary.
  *  @param index  The index in the mutable ordered bijective dictionary at which to insert object. This value must not be greater than the count of elements in the dictionary.
  */
-- (void)setObject:(id)object
+- (void)setObject:(nullable id)object
            forKey:(id)key
           atIndex:(NSUInteger)index;
 
@@ -156,7 +156,7 @@ forKeyedSubscript:(KeyType)key;
  *  @param key    The key for object. A strong reference to the key is maintained by the dictionary.
  *  @param index  The index in the mutable ordered bijective dictionary at which to insert object. This value must not be greater than the count of elements in the dictionary.
  */
-- (void)setObject:(ObjectType)object
+- (void)setObject:(nullable ObjectType)object
            forKey:(KeyType)key
           atIndex:(NSUInteger)index;
 

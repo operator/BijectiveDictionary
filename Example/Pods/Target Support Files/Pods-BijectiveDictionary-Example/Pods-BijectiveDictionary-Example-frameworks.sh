@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-BijectiveDictionary_Tests/BijectiveDictionary.framework"
+  install_framework "Pods-BijectiveDictionary-Example/BijectiveDictionary.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-BijectiveDictionary_Tests/BijectiveDictionary.framework"
+  install_framework "Pods-BijectiveDictionary-Example/BijectiveDictionary.framework"
 fi

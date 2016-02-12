@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = 'BijectiveDictionary'
-  s.version             = '1.0.2'
+  s.version             = '1.0.3'
   s.summary             = 'A dictionary that preserves the uniqueness of both its keys and its values.'
   s.homepage            = 'https://github.com/Operator/BijectiveDictionary'
   s.license             = 'MIT'

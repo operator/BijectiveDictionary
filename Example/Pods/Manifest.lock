@@ -1,7 +1,7 @@
 PODS:
-  - BijectiveDictionary (1.0.1):
-    - BijectiveDictionary/OPCCopying (= 1.0.1)
-  - BijectiveDictionary/OPCCopying (1.0.1)
+  - BijectiveDictionary (1.0.3):
+    - BijectiveDictionary/OPCCopying (= 1.0.3)
+  - BijectiveDictionary/OPCCopying (1.0.3)
 
 DEPENDENCIES:
   - BijectiveDictionary (from `../`)
@@ -11,6 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BijectiveDictionary: 79c5a502e74ef7776d6411f3236e7ebaf60bc918
+  BijectiveDictionary: dc3fda33bd209a4451da13d0efdda088f16c0656
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 25c0c2403fe48eb2b29dbe31abc8b4b6c5766844
+
+COCOAPODS: 1.0.0.beta.3

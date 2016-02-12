@@ -247,13 +247,14 @@ NS_ASSUME_NONNULL_BEGIN
     self.mutableOrderedObjects = [orderedObjects mutableCopy];
 }
 
-- (void)setObject:(id)object
+- (void)setObject:(nullable id)object
 forKeyedSubscript:(id)key
 {
     [self removeObjectForKey:key];
-    [self.mutableOrderedKeys addObject:key];
-    [self.mutableOrderedObjects addObject:object];
-
+    if (object) {
+        [self.mutableOrderedKeys addObject:key];
+        [self.mutableOrderedObjects addObject:object];
+    }
     NSParameterAssert(self.mutableOrderedKeys.count == self.mutableOrderedObjects.count);
 }
 
@@ -273,7 +274,7 @@ forKeyedSubscript:(id)key
 
 @implementation OPCMutableOrderedBijectiveDictionary
 
-- (void)setObject:(id)object
+- (void)setObject:(nullable id)object
            forKey:(id)key
           atIndex:(NSUInteger)index
 {
@@ -424,7 +425,7 @@ forKeyedSubscript:(id)key
     return hash;
 }
 
-- (void)setObject:(id)object
+- (void)setObject:(nullable id)object
 forKeyedSubscript:(id)key
 {
     dispatch_barrier_async(_queue, ^{
@@ -432,7 +433,7 @@ forKeyedSubscript:(id)key
     });
 }
 
-- (void)setObject:(id)object
+- (void)setObject:(nullable id)object
            forKey:(id)key
           atIndex:(NSUInteger)index
 {

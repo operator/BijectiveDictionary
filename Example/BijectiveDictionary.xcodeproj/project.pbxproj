@@ -7,41 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2684B5B684EFAAC959E059C2 /* Pods_BijectiveDictionary_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917B8508D466F8748FE930BB /* Pods_BijectiveDictionary_Tests.framework */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		B50137FF9486474EB517F8B5 /* Pods_BijectiveDictionary_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC9ED1190E7873975ABF64D /* Pods_BijectiveDictionary_Example.framework */; };
+		DB645BE81C6DBA9F0036B8F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DB645BE71C6DBA9F0036B8F2 /* main.m */; };
+		DB645BEB1C6DBA9F0036B8F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB645BEA1C6DBA9F0036B8F2 /* AppDelegate.m */; };
+		DB645BEE1C6DBA9F0036B8F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB645BED1C6DBA9F0036B8F2 /* ViewController.m */; };
+		DB645BF11C6DBA9F0036B8F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB645BEF1C6DBA9F0036B8F2 /* Main.storyboard */; };
+		DB645BF31C6DBA9F0036B8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB645BF21C6DBA9F0036B8F2 /* Assets.xcassets */; };
+		DB645BF61C6DBA9F0036B8F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB645BF41C6DBA9F0036B8F2 /* LaunchScreen.storyboard */; };
+		DB645C021C6DBAC50036B8F2 /* BijectiveDictionary_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB645C011C6DBAC50036B8F2 /* BijectiveDictionary_ExampleTests.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DB645C041C6DBAC50036B8F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB645BE31C6DBA9F0036B8F2;
+			remoteInfo = "BijectiveDictionary-Example";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		1182514F814452F6E188C604 /* Pods-BijectiveDictionary_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijectiveDictionary_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijectiveDictionary_Tests/Pods-BijectiveDictionary_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		15F475A0BDE03E4BA0370B92 /* Pods-BijectiveDictionary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijectiveDictionary_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijectiveDictionary_Tests/Pods-BijectiveDictionary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1EC9ED1190E7873975ABF64D /* Pods_BijectiveDictionary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijectiveDictionary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F5AE195388D20070C39A /* BijectiveDictionary_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BijectiveDictionary_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71294F5EE72CA5B7747EA23A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		917B8508D466F8748FE930BB /* Pods_BijectiveDictionary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijectiveDictionary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		978EA7E055DD59F03D73E155 /* Pods-BijectiveDictionary-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijectiveDictionary-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BijectiveDictionary-Example/Pods-BijectiveDictionary-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A25B96157106BFFBFFE72324 /* Pods_BijectiveDictionary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BijectiveDictionary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCBC53114882975CFCA8169 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DB645BE41C6DBA9F0036B8F2 /* BijectiveDictionary-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BijectiveDictionary-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB645BE71C6DBA9F0036B8F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DB645BE91C6DBA9F0036B8F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DB645BEA1C6DBA9F0036B8F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DB645BEC1C6DBA9F0036B8F2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DB645BED1C6DBA9F0036B8F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB645BF01C6DBA9F0036B8F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB645BF21C6DBA9F0036B8F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB645BF51C6DBA9F0036B8F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB645BF71C6DBA9F0036B8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB645BFF1C6DBAC50036B8F2 /* BijectiveDictionary-ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BijectiveDictionary-ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB645C011C6DBAC50036B8F2 /* BijectiveDictionary_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BijectiveDictionary_ExampleTests.m; sourceTree = "<group>"; };
+		DB645C031C6DBAC50036B8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE3CCD35119AF1A9F995C267 /* BijectiveDictionary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BijectiveDictionary.podspec; path = ../BijectiveDictionary.podspec; sourceTree = "<group>"; };
+		F92A2DA4631AF01405CF5BA7 /* Pods-BijectiveDictionary-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BijectiveDictionary-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BijectiveDictionary-Example/Pods-BijectiveDictionary-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6003F5AB195388D20070C39A /* Frameworks */ = {
+		DB645BE11C6DBA9F0036B8F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2684B5B684EFAAC959E059C2 /* Pods_BijectiveDictionary_Tests.framework in Frameworks */,
+				B50137FF9486474EB517F8B5 /* Pods_BijectiveDictionary_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB645BFC1C6DBAC50036B8F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,17 +77,19 @@
 			isa = PBXGroup;
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F5B5195388D20070C39A /* Tests */,
+				DB645BE51C6DBA9F0036B8F2 /* BijectiveDictionary-Example */,
+				DB645C001C6DBAC50036B8F2 /* BijectiveDictionary-ExampleTests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				C66155DB9BF269DBA566F974 /* Pods */,
+				6DC50C46350D3CD27E67BE7D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5AE195388D20070C39A /* BijectiveDictionary_Tests.xctest */,
+				DB645BE41C6DBA9F0036B8F2 /* BijectiveDictionary-Example.app */,
+				DB645BFF1C6DBAC50036B8F2 /* BijectiveDictionary-ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,28 +101,10 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				917B8508D466F8748FE930BB /* Pods_BijectiveDictionary_Tests.framework */,
+				A25B96157106BFFBFFE72324 /* Pods_BijectiveDictionary_Tests.framework */,
+				1EC9ED1190E7873975ABF64D /* Pods_BijectiveDictionary_Example.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F5B5195388D20070C39A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
-				6003F5B6195388D20070C39A /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		6003F5B6195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
@@ -108,36 +117,87 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		C66155DB9BF269DBA566F974 /* Pods */ = {
+		6DC50C46350D3CD27E67BE7D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				15F475A0BDE03E4BA0370B92 /* Pods-BijectiveDictionary_Tests.debug.xcconfig */,
-				1182514F814452F6E188C604 /* Pods-BijectiveDictionary_Tests.release.xcconfig */,
+				978EA7E055DD59F03D73E155 /* Pods-BijectiveDictionary-Example.debug.xcconfig */,
+				F92A2DA4631AF01405CF5BA7 /* Pods-BijectiveDictionary-Example.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB645BE51C6DBA9F0036B8F2 /* BijectiveDictionary-Example */ = {
+			isa = PBXGroup;
+			children = (
+				DB645BE91C6DBA9F0036B8F2 /* AppDelegate.h */,
+				DB645BEA1C6DBA9F0036B8F2 /* AppDelegate.m */,
+				DB645BEC1C6DBA9F0036B8F2 /* ViewController.h */,
+				DB645BED1C6DBA9F0036B8F2 /* ViewController.m */,
+				DB645BEF1C6DBA9F0036B8F2 /* Main.storyboard */,
+				DB645BF21C6DBA9F0036B8F2 /* Assets.xcassets */,
+				DB645BF41C6DBA9F0036B8F2 /* LaunchScreen.storyboard */,
+				DB645BF71C6DBA9F0036B8F2 /* Info.plist */,
+				DB645BE61C6DBA9F0036B8F2 /* Supporting Files */,
+			);
+			path = "BijectiveDictionary-Example";
+			sourceTree = "<group>";
+		};
+		DB645BE61C6DBA9F0036B8F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB645BE71C6DBA9F0036B8F2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DB645C001C6DBAC50036B8F2 /* BijectiveDictionary-ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB645C011C6DBAC50036B8F2 /* BijectiveDictionary_ExampleTests.m */,
+				DB645C031C6DBAC50036B8F2 /* Info.plist */,
+			);
+			path = "BijectiveDictionary-ExampleTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F5AD195388D20070C39A /* BijectiveDictionary_Tests */ = {
+		DB645BE31C6DBA9F0036B8F2 /* BijectiveDictionary-Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "BijectiveDictionary_Tests" */;
+			buildConfigurationList = DB645BF81C6DBA9F0036B8F2 /* Build configuration list for PBXNativeTarget "BijectiveDictionary-Example" */;
 			buildPhases = (
-				3E00CA05E78636481353FD41 /* Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-				30ED357DC77FC026F210F300 /* Embed Pods Frameworks */,
-				E71907A03266A2BA4076AB16 /* Copy Pods Resources */,
+				DA056CE10746BBC5C9C9FFAA /* Check Pods Manifest.lock */,
+				DB645BE01C6DBA9F0036B8F2 /* Sources */,
+				DB645BE11C6DBA9F0036B8F2 /* Frameworks */,
+				DB645BE21C6DBA9F0036B8F2 /* Resources */,
+				D889913F3A2ABA0A28E4EBA9 /* Embed Pods Frameworks */,
+				C837194264A99BD6FF49EAB1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BijectiveDictionary_Tests;
-			productName = BijectiveDictionaryTests;
-			productReference = 6003F5AE195388D20070C39A /* BijectiveDictionary_Tests.xctest */;
+			name = "BijectiveDictionary-Example";
+			productName = "BijectiveDictionary-Example";
+			productReference = DB645BE41C6DBA9F0036B8F2 /* BijectiveDictionary-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB645BFE1C6DBAC50036B8F2 /* BijectiveDictionary-ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB645C061C6DBAC50036B8F2 /* Build configuration list for PBXNativeTarget "BijectiveDictionary-ExampleTests" */;
+			buildPhases = (
+				DB645BFB1C6DBAC50036B8F2 /* Sources */,
+				DB645BFC1C6DBAC50036B8F2 /* Frameworks */,
+				DB645BFD1C6DBAC50036B8F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB645C051C6DBAC50036B8F2 /* PBXTargetDependency */,
+			);
+			name = "BijectiveDictionary-ExampleTests";
+			productName = "BijectiveDictionary-ExampleTests";
+			productReference = DB645BFF1C6DBAC50036B8F2 /* BijectiveDictionary-ExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -150,8 +210,12 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Peter Meyers";
 				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
+					DB645BE31C6DBA9F0036B8F2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					DB645BFE1C6DBAC50036B8F2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = DB645BE31C6DBA9F0036B8F2;
 					};
 				};
 			};
@@ -168,24 +232,49 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F5AD195388D20070C39A /* BijectiveDictionary_Tests */,
+				DB645BE31C6DBA9F0036B8F2 /* BijectiveDictionary-Example */,
+				DB645BFE1C6DBAC50036B8F2 /* BijectiveDictionary-ExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6003F5AC195388D20070C39A /* Resources */ = {
+		DB645BE21C6DBA9F0036B8F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				DB645BF61C6DBA9F0036B8F2 /* LaunchScreen.storyboard in Resources */,
+				DB645BF31C6DBA9F0036B8F2 /* Assets.xcassets in Resources */,
+				DB645BF11C6DBA9F0036B8F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB645BFD1C6DBAC50036B8F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30ED357DC77FC026F210F300 /* Embed Pods Frameworks */ = {
+		C837194264A99BD6FF49EAB1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BijectiveDictionary-Example/Pods-BijectiveDictionary-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D889913F3A2ABA0A28E4EBA9 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -197,10 +286,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BijectiveDictionary_Tests/Pods-BijectiveDictionary_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BijectiveDictionary-Example/Pods-BijectiveDictionary-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3E00CA05E78636481353FD41 /* Check Pods Manifest.lock */ = {
+		DA056CE10746BBC5C9C9FFAA /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,41 +304,52 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E71907A03266A2BA4076AB16 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BijectiveDictionary_Tests/Pods-BijectiveDictionary_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6003F5AA195388D20070C39A /* Sources */ = {
+		DB645BE01C6DBA9F0036B8F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				DB645BEE1C6DBA9F0036B8F2 /* ViewController.m in Sources */,
+				DB645BEB1C6DBA9F0036B8F2 /* AppDelegate.m in Sources */,
+				DB645BE81C6DBA9F0036B8F2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB645BFB1C6DBAC50036B8F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB645C021C6DBAC50036B8F2 /* BijectiveDictionary_ExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DB645C051C6DBAC50036B8F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB645BE31C6DBA9F0036B8F2 /* BijectiveDictionary-Example */;
+			targetProxy = DB645C041C6DBAC50036B8F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+		DB645BEF1C6DBA9F0036B8F2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6003F5B9195388D20070C39A /* en */,
+				DB645BF01C6DBA9F0036B8F2 /* Base */,
 			);
-			name = InfoPlist.strings;
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB645BF41C6DBA9F0036B8F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB645BF51C6DBA9F0036B8F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -327,43 +427,79 @@
 			};
 			name = Release;
 		};
-		6003F5C3195388D20070C39A /* Debug */ = {
+		DB645BF91C6DBA9F0036B8F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15F475A0BDE03E4BA0370B92 /* Pods-BijectiveDictionary_Tests.debug.xcconfig */;
+			baseConfigurationReference = 978EA7E055DD59F03D73E155 /* Pods-BijectiveDictionary-Example.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BijectiveDictionary-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.operator.BijectiveDictionary-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BijectiveDictionary_Example.app/BijectiveDictionary_Example";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		6003F5C4195388D20070C39A /* Release */ = {
+		DB645BFA1C6DBA9F0036B8F2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1182514F814452F6E188C604 /* Pods-BijectiveDictionary_Tests.release.xcconfig */;
+			baseConfigurationReference = F92A2DA4631AF01405CF5BA7 /* Pods-BijectiveDictionary-Example.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BijectiveDictionary-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.operator.BijectiveDictionary-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BijectiveDictionary_Example.app/BijectiveDictionary_Example";
-				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		DB645C071C6DBAC50036B8F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BijectiveDictionary-ExampleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.operator.BijectiveDictionary-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BijectiveDictionary-Example.app/BijectiveDictionary-Example";
+			};
+			name = Debug;
+		};
+		DB645C081C6DBAC50036B8F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "BijectiveDictionary-ExampleTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.operator.BijectiveDictionary-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BijectiveDictionary-Example.app/BijectiveDictionary-Example";
 			};
 			name = Release;
 		};
@@ -379,11 +515,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "BijectiveDictionary_Tests" */ = {
+		DB645BF81C6DBA9F0036B8F2 /* Build configuration list for PBXNativeTarget "BijectiveDictionary-Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
+				DB645BF91C6DBA9F0036B8F2 /* Debug */,
+				DB645BFA1C6DBA9F0036B8F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB645C061C6DBAC50036B8F2 /* Build configuration list for PBXNativeTarget "BijectiveDictionary-ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB645C071C6DBAC50036B8F2 /* Debug */,
+				DB645C081C6DBAC50036B8F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
