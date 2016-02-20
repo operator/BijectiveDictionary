@@ -28,8 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
                            keys:(nullable NSOrderedSet *)keys
 {
     if (self = [super init]) {
-        _orderedKeys = [keys copy];
-        _orderedObjects = [objects copy];
+        _orderedKeys = [keys copy] ?: [NSOrderedSet orderedSet];
+        _orderedObjects = [objects copy] ?: [NSOrderedSet orderedSet];
         NSParameterAssert(_orderedKeys.count == _orderedObjects.count);
     }
     return self;
@@ -212,8 +212,8 @@ NS_ASSUME_NONNULL_BEGIN
                            keys:(nullable NSOrderedSet *)keys
 {
     if (self = [super initWithObjects:nil keys:nil]) {
-        _mutableOrderedKeys = [keys mutableCopy];
-        _mutableOrderedObjects = [objects mutableCopy];
+        _mutableOrderedKeys = [keys mutableCopy] ?: [NSMutableOrderedSet orderedSet];
+        _mutableOrderedObjects = [objects mutableCopy] ?: [NSMutableOrderedSet orderedSet];
     }
     return self;
 }
