@@ -293,11 +293,6 @@ forKeyedSubscript:(id)key
     OPCThreadSafeMutableOrderedBijectiveDictionary *_backingDictionary;
 }
 
-- (id)forwardingTargetForSelector:(SEL)aSelector
-{
-    return _backingDictionary;
-}
-
 - (instancetype)init
 {
     return [self initWithObjects:nil keys:nil];
@@ -310,6 +305,88 @@ forKeyedSubscript:(id)key
         _backingDictionary = [[OPCThreadSafeMutableOrderedBijectiveDictionary alloc] initWithObjects:objects keys:keys];
     }
     return self;
+}
+
+- (NSSet *)keys
+{
+    return _backingDictionary.keys;
+}
+
+- (NSSet *)objects
+{
+    return _backingDictionary.objects;
+}
+
+- (NSMapTable *)mapTable
+{
+    return _backingDictionary.mapTable;
+}
+
+- (nullable id)objectForKeyedSubscript:(id)key
+{
+    return [_backingDictionary objectForKeyedSubscript:key];
+}
+
+- (instancetype)inverse
+{
+    return _backingDictionary.inverse;
+}
+
+- (NSUInteger)count
+{
+    return _backingDictionary.count;
+}
+
+- (NSString *)description
+{
+    return _backingDictionary.description;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    return [_backingDictionary isEqual:object];
+}
+
+- (NSUInteger)hash
+{
+    return _backingDictionary.hash;
+}
+
+- (void)setObject:(nullable id)object
+forKeyedSubscript:(id)key
+{
+    [_backingDictionary setObject:object forKeyedSubscript:key];
+}
+
+#pragma mark NSFastEnumeration
+
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state
+                                  objects:(__unsafe_unretained id[])buffer
+                                    count:(NSUInteger)len
+{
+    return [_backingDictionary countByEnumeratingWithState:state objects:buffer count:len];
+}
+
+#pragma mark NSCopying
+
+- (id)copyWithZone:(nullable NSZone *)zone
+{
+    return [_backingDictionary copyWithZone:zone];
+}
+
+- (id)mutableCopyWithZone:(nullable NSZone *)zone
+{
+    return [_backingDictionary mutableCopyWithZone:zone];
+}
+
+- (id)mutableOrderedCopyWithZone:(NSZone *)zone
+{
+    return [_backingDictionary mutableCopyWithZone:zone];
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [_backingDictionary encodeWithCoder:aCoder];
 }
 
 - (id)threadSafeMutableCopy
